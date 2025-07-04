@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/ic_healing_logo.xml - FIXED VERSION -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+
+    <!-- Palm Tree Icon -->
+    <path
+        android:fillColor="#FF4A90E2"
+        android:pathData="M60,30C60,30 50,40 60,50C70,40 60,30 60,30ZM60,50C60,50 40,55 50,70C55,65 60,50 60,50ZM60,50C60,50 80,55 70,70C65,65 60,50 60,50ZM60,50L60,90" />
+
+    <!-- Decorative circles using path instead of circle -->
+    <path
+        android:fillColor="#FF6C63FF"
+        android:pathData="M45,75m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    <path
+        android:fillColor="#FF6C63FF"
+        android:pathData="M75,75m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    <path
+        android:fillColor="#FF4A90E2"
+        android:pathData="M60,85m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+</vector>

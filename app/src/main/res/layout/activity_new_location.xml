@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header dengan tombol kembali -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:tint="@color/black"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Back Button" /> <!-- Menambahkan contentDescription untuk aksesibilitas -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New Location"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+        </LinearLayout>
+
+        <!-- Input nama lokasi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etLocationName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter Location Name"
+            android:inputType="text"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Spinner kategori lokasi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_spinner_bg"
+            android:paddingHorizontal="16dp" />
+
+        <!-- Input URL gambar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etPhotoUrl"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter Location Photo URL"
+            android:inputType="textUri"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Deskripsi singkat -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short Description"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etShortDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Enter Short Description about the Location"
+            android:inputType="textMultiLine"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:maxLines="3"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Deskripsi lengkap -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etFullDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Enter Complete Description about the Location"
+            android:inputType="textMultiLine"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:maxLines="5"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Tombol Tambah Lokasi -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Add Location"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="28dp"
+            android:backgroundTint="@color/blue_primary"
+            android:textColor="@color/white"
+            android:contentDescription="Add Location Button" /> <!-- Menambahkan contentDescription untuk aksesibilitas -->
+
+    </LinearLayout>
+
+</ScrollView>

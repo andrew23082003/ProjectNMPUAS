@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Healingapps</string>
+
+    <!-- Navigation -->
+    <string name="explore">Explore</string>
+    <string name="favourite">Favourite</string>
+    <string name="profile">Profile</string>
+
+    <!-- Drawer -->
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+
+    <!-- Categories Array -->
+    <string-array name="categories">
+        <item>Cafe</item>
+        <item>Restaurant</item>
+        <item>Hotel</item>
+        <item>Karaoke</item>
+        <item>Arcade</item>
+        <item>Playground</item>
+        <item>Billiard</item>
+        <item>Bowling</item>
+        <item>Bar</item>
+        <item>Warkop</item>
+    </string-array>
+
+    <!-- Form Labels -->
+    <string name="location_name">Location Name</string>
+    <string name="category">Category</string>
+    <string name="photo_url">Photo URL</string>
+    <string name="short_description">Short Description</string>
+    <string name="full_description">Full Description</string>
+
+    <!-- Button Text -->
+    <string name="add_location">Add Location</string>
+    <string name="read_more">Read More</string>
+    <string name="add_to_favorite">+ Add to favourite</string>
+    <string name="remove_favorite">- Remove favourite</string>
+
+    <!-- Messages -->
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+    <string name="location_added_successfully">Location added successfully!</string>
+
+    <!-- Error Messages -->
+    <string name="error_name_empty">Location name cannot be empty</string>
+    <string name="error_url_empty">Photo URL cannot be empty</string>
+    <string name="error_short_desc_empty">Short description cannot be empty</string>
+    <string name="error_full_desc_empty">Full description cannot be empty</string>
+    <string name="error_invalid_url">Please enter a valid URL</string>
+
+
+</resources>

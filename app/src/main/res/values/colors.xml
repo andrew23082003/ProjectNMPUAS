@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Default Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Gray Colors -->
+    <color name="gray_light">#FFF8F9FA</color>
+    <color name="gray_medium">#FFCCCCCC</color>
+    <color name="gray_text">#FF9E9E9E</color>
+    <color name="gray_unselected">#FFBDBDBD</color>
+
+    <!-- Primary App Colors -->
+    <color name="primary_color">#3D4279</color>
+    <color name="secondary_color">#FFFF6B6B</color>
+    <color name="blue_primary">#3D4279</color>
+    <color name="blue_gradient">#FF4A90E2</color>
+
+    <!-- Accent Colors -->
+    <color name="green_fab">#E6B8D4</color>
+    <color name="red_heart">#FFFF4081</color>
+    <color name="light_blue_bg">#FFE3F2FD</color>
+
+    <!-- Bottom Navigation Colors -->
+    <color name="bottom_nav_selected">#FF4A90E2</color>
+    <color name="bottom_nav_unselected">#FFBDBDBD</color>
+
+    <!-- Drawer Colors -->
+    <color name="drawer_icon_color">#FF666666</color>
+    <color name="drawer_text_color">#FF333333</color>
+
+    <!-- Additional Colors for Better UI -->
+    <color name="border_color">#FFE0E0E0</color>
+    <color name="background_light">#FFFAFAFA</color>
+    <color name="text_dark">#FF212121</color>
+    <color name="text_light">#FF757575</color>
+    <color name="divider_color">#FFBDBDBD</color>
+
+    <!-- Status Colors -->
+    <color name="success_color">#FF4CAF50</color>
+    <color name="warning_color">#FFFF9800</color>
+    <color name="error_color">#FFF44336</color>
+    <color name="info_color">#FF2196F3</color>
+
+
+        <color name="primary_green">#4CAF50</color>
+        <color name="primary_dark">#388E3C</color>
+        <color name="accent">#A5D6A7</color>
+        <color name="text_primary">#212121</color>
+        <color name="text_secondary">#757575</color>
+
+</resources>
