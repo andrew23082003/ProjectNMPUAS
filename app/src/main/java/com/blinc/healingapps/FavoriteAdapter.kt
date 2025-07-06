@@ -19,6 +19,7 @@ class FavoriteAdapter(
             binding.apply {
                 tvFavoriteName.text = place.placeName
                 tvFavoriteCategory.text = place.placeCategory.displayName
+                tvFavoriteShortDesc.text = place.briefInfo
 
                 Picasso.get()
                     .load(place.imageUrl)

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In Now"
+        android:text="Welcome Back!"
         android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -20,7 +21,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="please sign in to continue healing apps"
+        android:text="Please sign in to continue Yuk, Healing!"
         android:textSize="14sp"
         android:textColor="@color/gray_text"
         android:layout_marginBottom="48dp" />
@@ -29,52 +30,56 @@
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:hint="www.uihut@gmail.com"
+        android:hint="Email Address"
         android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
         android:background="@drawable/rounded_edittext_bg"
         android:paddingHorizontal="16dp"
         android:textSize="16sp"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:importantForAutofill="yes" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:hint="**********"
+        android:hint="Password"
         android:inputType="textPassword"
+        android:autofillHints="password"
         android:background="@drawable/rounded_edittext_bg"
         android:paddingHorizontal="16dp"
         android:textSize="16sp"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:importantForAutofill="yes" />
 
     <TextView
         android:id="@+id/tvForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forget Password?"
-        android:textColor="@color/blue_primary"
-        android:textSize="14sp"
         android:layout_gravity="end"
         android:layout_marginBottom="32dp"
+        android:background="?attr/selectableItemBackground"
         android:clickable="true"
+        android:contentDescription="Forgot Password"
         android:focusable="true"
-        android:background="?android:attr/selectableItemBackground"
-        android:padding="4dp" />
+        android:minHeight="48dp"
+        android:padding="4dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/green_primary"
+        android:textSize="14sp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="Sign in now"
+        android:text="Sign In"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:cornerRadius="28dp"
-        android:backgroundTint="@color/blue_primary"
+        android:backgroundTint="@color/green_primary"
         android:textColor="@color/white"
         android:layout_marginBottom="24dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:enabled="true" />
+        app:cornerRadius="28dp"
+        android:contentDescription="Sign In Button" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -94,23 +99,23 @@
             android:id="@+id/tvSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign up"
-            android:textColor="@color/blue_primary"
-            android:textStyle="bold"
-            android:textSize="14sp"
             android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:contentDescription="Sign Up"
             android:focusable="true"
-            android:background="?android:attr/selectableItemBackground"
-            android:padding="4dp" />
-
+            android:padding="4dp"
+            android:text="Sign up"
+            android:textColor="@color/green_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Or connect"
+        android:text="Or connect with your account"
         android:textColor="@color/gray_text"
         android:textSize="14sp" />
-
 </LinearLayout>

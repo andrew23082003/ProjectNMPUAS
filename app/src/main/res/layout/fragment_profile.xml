@@ -1,110 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
     android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="32dp">
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
+        <!-- Header -->
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Profile"
-            android:textSize="18sp"
+            android:text="Your Profile"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:gravity="center" />
+            android:layout_marginBottom="32dp" />
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Your Name"
+            android:text="Devilian"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="your@email.com"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Joined -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Joined since"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etJoinedDate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="21/05/2025"
+            android:inputType="none"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Joined Date" />
+
+        <!-- Total Favorites -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Favorites"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTotalFavourites"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="7"
+            android:inputType="number"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:contentDescription="Total Favorite Places" />
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="8dp" />
-
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:text="Devilian"
-        android:inputType="textPersonName"
-        android:background="@drawable/rounded_edittext_bg"
-        android:paddingHorizontal="16dp"
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="8dp" />
-
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:hint="Enter your email"
-        android:inputType="textEmailAddress"
-        android:background="@drawable/rounded_edittext_bg"
-        android:paddingHorizontal="16dp"
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Joined since"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="8dp" />
-
-    <EditText
-        android:id="@+id/etJoinedDate"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:text="21/05/2025"
-        android:inputType="none"
-        android:background="@drawable/rounded_edittext_bg"
-        android:paddingHorizontal="16dp"
-        android:textSize="16sp"
-        android:enabled="false"
-        android:layout_marginBottom="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Favorites"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="8dp" />
-
-    <EditText
-        android:id="@+id/etTotalFavourites"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:text="7"
-        android:inputType="none"
-        android:background="@drawable/rounded_edittext_bg"
-        android:paddingHorizontal="16dp"
-        android:textSize="16sp"
-        android:enabled="false" />
-
-</LinearLayout>
+</ScrollView>
